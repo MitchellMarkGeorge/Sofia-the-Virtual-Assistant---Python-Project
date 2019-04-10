@@ -27,9 +27,9 @@ class MyFrame(wx.Frame):
         panel.SetSizer(sizer)
         self.Show()
 
-# Defines OnEnter function to allow user input. The textbox temprarily stores the input usein self.txt.GetValue() and converts it to lowercase
+# Defines OnEnter function to allow user input. The textbox temprarily stores the input using self.txt.GetValue() and converts it to lowercase
 
-    def OnEnter(self, EnterEvent): # I noticed the program wont work if there was only 1 argument
+    def OnEnter(self):
         input = self.txt.GetValue()
         input = input.lower()
 
